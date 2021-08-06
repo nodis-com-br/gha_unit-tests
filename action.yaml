@@ -1,0 +1,15 @@
+name: 'unit-tests'
+description: ''
+inputs:
+  gh_global_token:
+    description: ''
+    required: true
+  pip_index_url:
+    description: ''
+    required: false
+    default: https://pypi.org/simple/
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    PIP_INDEX_URL: ${{ inputs.pip_index_url }}
