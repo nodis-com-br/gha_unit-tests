@@ -1,9 +1,6 @@
 name: 'unit-tests'
 description: ''
 inputs:
-  gh_global_token:
-    description: ''
-    required: true
   pip_index_url:
     description: ''
     required: false
